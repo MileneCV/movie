@@ -69,7 +69,7 @@ I will then use the MySQL database to answer several hypotheses about movie succ
 # Q1: does the MPAA rating of a movie (G/PG/PG-13/R) affect how much revenue the movie generates?
 
 ### 1. State the Hypothesis & Null Hypothesis
-- H0 (Null Hypothesis): no difference in revenue amount between all MPAA rating.
+- H0 (Null Hypothesis): no difference in revenue amount between all MPAA ratings.
 - HA(Alternative Hypothesis): there is a significant difference in revenue amount between ratings.
 
 ### 2. Determine the correct test to perform.
@@ -80,7 +80,7 @@ I will then use the MySQL database to answer several hypotheses about movie succ
 ### 3. Testing Assumptions
 - **No significant outliers**
 
-there were 494 outliers in unknow,
+there were 494 outliers in unknown,
 there were 72 outliers in PG,
 there were 226 outliers in R,
 there were 20 outliers in G,
@@ -89,16 +89,16 @@ there were 158 outliers in PG-13,
 there were 4 outliers in NC-1.
 
 - **Normality**
-Our p-values for all group are below 0.05 which means our data is NOT normally distributed. However, our our sample size is large enough (n>20) to proceed without satisfying this test.
+Our p-values for all groups are below 0.05 which means our data is NOT normally distributed. However, our sample size is large enough (n>20) to proceed without satisfying this test.
 
 - **Equal Variance** 
-p<0.05 fail the assumption of equal variance we need select a non-parametric equivalent test - Kruskal-Wallis test
+p<0.05 fail the assumption of equal variance we need to select a non-parametric equivalent test - Kruskal-Wallis test
 
 ### 4 - Final Hypothesis Test
 KruskalResult(statistic=28719.975655133385, pvalue=0.0)
 
 ### 5 - Interpret your p-value and reject or fail to reject your null hypothesis
-p < 0.05 - reject null hypothesis and support the alternate hypothesis there is a significant difference in revenue amount between ratings.
+p < 0.05 - reject the null hypothesis and support the alternate hypothesis there is a significant difference in revenue amount between ratings.
 
 ### 6 - Show a supporting visualization that helps display the result
 
@@ -113,11 +113,11 @@ PG13 was ratting with the higher total revenue amount. G, NR and NC-17 were the 
 #### Post-Hoc Multiple Comparison Test
 There is no difference (p>0.05) between:
 - NC-17 and NR
-- NC-17 and unknow
-- NR and unknow
+- NC-17 and unknown
+- NR and unknown
 - PG AND PG3
 
-These groups have similar x values in tukey plot below:
+These groups have similar x values in the tukey plot below:
 ![image](https://user-images.githubusercontent.com/112773242/225708813-8c7f6d30-ae18-4119-b233-b52fc46f94d0.png)
 
 
@@ -163,7 +163,7 @@ there were 2 outliers in TV Movie,
 there were 4 outliers in Documentary,
 
 - **Normality**
-Our our sample size is large enough (n>20) to proceed without satisfying this test.
+Our sample size is large enough (n>20) to proceed without satisfying this test.
 
 - **Equal Variance**
 p<0.05 fail the assumption of equal variance we need select a non-parametric equivalent test - Kruskal-Wallis test
@@ -182,12 +182,12 @@ Adventure was the genre with higher average revenue. Documentary, TV movie horro
 
 ![image](https://user-images.githubusercontent.com/112773242/225711828-d335db3b-d786-492c-97ee-0e1db6159e34.png)
 
-Adventure and Action were the genres with higher total revenue. TV Movie, Documentary and unknow were the genres with lower total revenue.
+Adventure and Action were the genres with higher total revenue. TV Movie, Documentary and unknown were the genres with lower total revenue.
 
 ### Post-Hoc Multiple Comparison Test
 ![image](https://user-images.githubusercontent.com/112773242/225712097-ca7d15b1-8468-4d26-b0c5-151248fc0b7a.png)
 
-Adventure was the genres with with more different revenue.
+Adventure was the genres with more different revenue.
 
 # Q3 - Are some genres higher popularity than others?
 
@@ -235,14 +235,14 @@ Our sample size is large enough (n>20) to proceed without satisfying this test.
 
 - **Equal Variance**
 
-p<0.05 fail the assumption of equal variance we need select a non-parametric equivalent test - Kruskal-Wallis test
+p<0.05 fail the assumption of equal variance we need to select a non-parametric equivalent test - Kruskal-Wallis test
 
 ### 4 - Final Hypothesis Test
 KruskalResult(statistic=25360.27351786209, pvalue=0.0)
 
 ### 5 - Interpret your p-value and reject or fail to reject your null hypothesis
 
-p < 0.05 - reject null hypothesis and support the alternate hypothesis there is a significant difference in popularity between genres.
+p < 0.05 - reject the null hypothesis and support the alternate hypothesis there is a significant difference in popularity between genres.
 
 ### 6 - Show a supporting visualization that helps display the result
 
@@ -250,7 +250,7 @@ p < 0.05 - reject null hypothesis and support the alternate hypothesis there is 
 
 Adventure, Animation and Fantasy were genres with higher popularity. Documentary was the genre with lower popularity.
 
-Let's do Post-Hoc Multiple Comparison Test to see if these difference are significant
+Let's do Post-Hoc Multiple Comparison Test to see if these differences are significant
 
 ### Post-Hoc Multiple Comparison Test
 
@@ -270,7 +270,7 @@ Genres with similar x value = there is no difference.
   - Adventure, Animation and Fantasy have higher popularity. 
 
 # Recomendation 
-- In order to make a successfuk movie, it would be recommended to produce a PG,PG-13 rated and adventure movie. 
+- To make a successful movie, it would be recommended to produce a PG, PG-13 rated and adventure movie. 
 
 
 
