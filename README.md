@@ -258,7 +258,19 @@ Let's do Post-Hoc Multiple Comparison Test to see if these difference are signif
 
 Genres with similar x value = there is no difference.
 
+# Summary 
 
+- The MPAA rating of a movie does affect how much revenue the movie generates.
+   - Movies that have an MPAA Rating of PG and PG-13 make the most revenue.
+
+- The genre of a movie does affect how much revenue a movie generates.
+   - Adventure, Fantasy, Animation, Action, Family and Science Fiction generate the greatest revenue.
+
+- Some genres have higher popularity than others. 
+  - Adventure, Animation and Fantasy have higher popularity. 
+
+# Recomendation 
+- In order to make a successfuk movie, it would be recommended to produce a PG,PG-13 rated and adventure movie. 
 
 
 
