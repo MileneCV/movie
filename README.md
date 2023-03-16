@@ -77,19 +77,192 @@ I will then use the MySQL database to answer several hypotheses about movie succ
 - How many groups/samples? more than two
 - Therefore, which test is appropriate? ANOVA
 
-### ANOVA Assumptions
-- No significant outliers
-there were 494 outliers in unknow
-there were 72 outliers in PG
-there were 226 outliers in R
-there were 20 outliers in G
-there were 56 outliers in NR
-there were 158 outliers in PG-13
-there were 4 outliers in NC-1
+### 3. Testing Assumptions
+- **No significant outliers**
 
-- Normality
+there were 494 outliers in unknow,
+there were 72 outliers in PG,
+there were 226 outliers in R,
+there were 20 outliers in G,
+there were 56 outliers in NR,
+there were 158 outliers in PG-13,
+there were 4 outliers in NC-1.
+
+- **Normality**
 Our p-values for all group are below 0.05 which means our data is NOT normally distributed. However, our our sample size is large enough (n>20) to proceed without satisfying this test.
 
-- Equal Variance 
+- **Equal Variance** 
 p<0.05 fail the assumption of equal variance we need select a non-parametric equivalent test - Kruskal-Wallis test
+
+### 4 - Final Hypothesis Test
+KruskalResult(statistic=28719.975655133385, pvalue=0.0)
+
+### 5 - Interpret your p-value and reject or fail to reject your null hypothesis
+p < 0.05 - reject null hypothesis and support the alternate hypothesis there is a significant difference in revenue amount between ratings.
+
+### 6 - Show a supporting visualization that helps display the result
+
+![image](https://user-images.githubusercontent.com/112773242/225708043-8ca697f5-d056-40e0-afcc-f1736fa916a2.png)
+
+PG and PG3 were the rating with higher average revenue, NR, NC-17 and Unknow were the rating with lower average revenue.
+
+![image](https://user-images.githubusercontent.com/112773242/225708221-ab71abe5-6ec9-4e1e-9f1e-ddc1d58c9bbd.png)
+
+PG13 was ratting with the higher total revenue amount. G, NR and NC-17 were the ratting with lower total revenue.
+
+#### Post-Hoc Multiple Comparison Test
+There is no difference (p>0.05) between:
+- NC-17 and NR
+- NC-17 and unknow
+- NR and unknow
+- PG AND PG3
+
+These groups have similar x values in tukey plot below:
+![image](https://user-images.githubusercontent.com/112773242/225708813-8c7f6d30-ae18-4119-b233-b52fc46f94d0.png)
+
+
+
+# Q2 - Do some movie genres earn more revenue than others?
+
+### 1. State the Hypothesis & Null Hypothesis
+
+H0 (Null Hypothesis): no difference in revenue amount between all genres.
+
+HA(Alternative Hypothesis): there is a significant difference in revenue amount between genres.
+
+### 2. Determine the correct test to perform.
+Type of Data? numeric
+
+How many groups/samples? more than two
+
+Therefore, which test is appropriate? ANOVA
+
+### 3. Testing Assumptions
+
+- **No significant outliers - outliers ( z > 3)**
+
+there were 452 outliers in Comedy,
+there were 31 outliers in Music,
+there were 229 outliers in Romance,
+there were 115 outliers in Science Fiction,
+there were 611 outliers in Drama,
+there were 260 outliers in Action,
+there were 119 outliers in Crime,
+there were 184 outliers in Adventure,
+there were 115 outliers in Animation,
+there were 133 outliers in Fantasy,
+there were 264 outliers in Horror,
+there were 276 outliers in Thriller,
+there were 59 outliers in History,
+there were 142 outliers in Family,
+there were 125 outliers in Mystery,
+there were 12 outliers in Western,
+there were 5 outliers in Unknow,
+there were 29 outliers in War,
+there were 2 outliers in TV Movie,
+there were 4 outliers in Documentary,
+
+- **Normality**
+Our our sample size is large enough (n>20) to proceed without satisfying this test.
+
+- **Equal Variance**
+p<0.05 fail the assumption of equal variance we need select a non-parametric equivalent test - Kruskal-Wallis test
+
+### 4 - Final Hypothesis Test
+KruskalResult(statistic=7133.177100216466, pvalue=0.0)
+
+### 5 - Interpret your p-value and reject or fail to reject your null hypothesis
+p < 0.05 - reject null hypothesis and support the alternate hypothesis there is a significant difference in revenue amount between genres.
+
+### 6 - Show a supporting visualization that helps display the result
+
+![image](https://user-images.githubusercontent.com/112773242/225711730-88c2c34a-c965-48db-8e92-5b59be1885a2.png)
+
+Adventure was the genre with higher average revenue. Documentary, TV movie horror and drama were the genres with lower average revenue.
+
+![image](https://user-images.githubusercontent.com/112773242/225711828-d335db3b-d786-492c-97ee-0e1db6159e34.png)
+
+Adventure and Action were the genres with higher total revenue. TV Movie, Documentary and unknow were the genres with lower total revenue.
+
+### Post-Hoc Multiple Comparison Test
+![image](https://user-images.githubusercontent.com/112773242/225712097-ca7d15b1-8468-4d26-b0c5-151248fc0b7a.png)
+
+Adventure was the genres with with more different revenue.
+
+# Q3 - Are some genres higher popularity than others?
+
+### 1. State the Hypothesis & Null Hypothesis
+
+H0 (Null Hypothesis): no difference in popularity between all genres.
+
+HA(Alternative Hypothesis): there is a significant difference in popularity between genres
+
+### 2. Determine the correct test to perform.
+
+Type of Data? numeric
+
+How many groups/samples? more than two
+
+Therefore, which test is appropriate? ANOVA
+
+### 3. Testing Assumptions
+
+- **No significant outliers - outliers ( z > 3)**
+there were 427 outliers in Comedy
+there were 36 outliers in Music
+there were 211 outliers in Romance
+there were 30 outliers in Science Fiction
+there were 863 outliers in Drama
+there were 107 outliers in Action
+there were 177 outliers in Crime
+there were 15 outliers in Adventure
+there were 56 outliers in Animation
+there were 13 outliers in Fantasy
+there were 338 outliers in Horror
+there were 350 outliers in Thriller
+there were 40 outliers in History
+there were 21 outliers in Family
+there were 117 outliers in Mystery
+there were 2 outliers in Western
+there were 138 outliers in Unknow
+there were 33 outliers in War
+there were 11 outliers in TV Movie
+there were 17 outliers in Documentary
+
+- **Normality**
+
+Our sample size is large enough (n>20) to proceed without satisfying this test.
+
+- **Equal Variance**
+
+p<0.05 fail the assumption of equal variance we need select a non-parametric equivalent test - Kruskal-Wallis test
+
+### 4 - Final Hypothesis Test
+KruskalResult(statistic=25360.27351786209, pvalue=0.0)
+
+### 5 - Interpret your p-value and reject or fail to reject your null hypothesis
+
+p < 0.05 - reject null hypothesis and support the alternate hypothesis there is a significant difference in popularity between genres.
+
+### 6 - Show a supporting visualization that helps display the result
+
+![image](https://user-images.githubusercontent.com/112773242/225713535-9dcd6837-53a3-4ba6-a54f-13cbf87af148.png)
+
+Adventure, Animation and Fantasy were genres with higher popularity. Documentary was the genre with lower popularity.
+
+Let's do Post-Hoc Multiple Comparison Test to see if these difference are significant
+
+### Post-Hoc Multiple Comparison Test
+
+![image](https://user-images.githubusercontent.com/112773242/225714192-993246a9-31d3-47b2-a2ed-5b1916ef7971.png)
+
+Genres with similar x value = there is no difference.
+
+
+
+
+
+
+
+
 
