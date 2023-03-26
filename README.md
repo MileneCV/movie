@@ -298,7 +298,7 @@ Certifications were the most important features used by Random Forest model. But
 - Some genres have higher popularity than others. 
   - Adventure, Animation and Fantasy have higher popularity. 
   
-  - Movies with higher popularity, new, with longer runtime and higher vote_count and vote_average, have higher revenue.
+- Movies with higher popularity, new, with longer runtime and higher vote_count and vote_average, have higher revenue.
 
 # Recomendation 
 - To make a successful movie, it would be recommended to produce a PG, PG-13 rated and adventure movie. 
