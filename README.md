@@ -258,6 +258,35 @@ Let's do Post-Hoc Multiple Comparison Test to see if these differences are signi
 
 Genres with similar x value = there is no difference.
 
+
+# Linear Regression 
+
+### Best model 
+
+<img width="348" alt="image" src="https://user-images.githubusercontent.com/112773242/227806675-8d00e37a-abb1-4135-b2c9-c8c4d0826bcf.png">
+
+
+
+![image](https://user-images.githubusercontent.com/112773242/227806686-55f0a96f-3ac7-4b8f-9413-2415718c7e17.png)
+
+
+![image](https://user-images.githubusercontent.com/112773242/227806829-2c2e3fac-e883-44eb-9395-816f63f25004.png)
+
+### Interpreting Model's Coefficients
+
+Movies with higher popularity, new, with longer runtime and higher vote_count and vote_average, have higher revenue. 
+
+# Random Forest 
+
+![image](https://user-images.githubusercontent.com/112773242/227806897-ec876209-b8e2-4415-aac2-ec4c89167cc0.png)
+
+Certifications were the most important features used by Random Forest model. But we do not know the actual relationship between the feature and the target. Let's check with SHAP.
+
+
+![image](https://user-images.githubusercontent.com/112773242/227806939-4795ae38-a50e-4df9-833b-c25b45097c0b.png)
+
+ Movies that have an MPAA Rating of PG and PG-13 make the most revenue.
+
 # Summary 
 
 - The MPAA rating of a movie does affect how much revenue the movie generates.
@@ -268,6 +297,8 @@ Genres with similar x value = there is no difference.
 
 - Some genres have higher popularity than others. 
   - Adventure, Animation and Fantasy have higher popularity. 
+  
+  - Movies with higher popularity, new, with longer runtime and higher vote_count and vote_average, have higher revenue.
 
 # Recomendation 
 - To make a successful movie, it would be recommended to produce a PG, PG-13 rated and adventure movie. 
