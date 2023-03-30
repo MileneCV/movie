@@ -304,6 +304,21 @@ Certifications were the most important features used by Random Forest model. But
 - To make a successful movie, it would be recommended to produce a PG, PG-13 rated and adventure movie. 
 
 
+# Tableau Dashboard
+
+https://public.tableau.com/shared/RKT4T3DHW?:display_count=n&:origin=viz_share_link
+
+<img width="741" alt="image" src="https://user-images.githubusercontent.com/112773242/228968027-2f780b6e-378d-41a7-9316-09d184ad55f2.png">
+
+<img width="715" alt="image" src="https://user-images.githubusercontent.com/112773242/228968210-ba74e7dd-29b6-45bc-8408-be4457beab5d.png">
+
+<img width="682" alt="image" src="https://user-images.githubusercontent.com/112773242/228968755-7e8d0951-1cd4-4f33-9845-29cdddf7260f.png">
+
+<img width="707" alt="image" src="https://user-images.githubusercontent.com/112773242/228968845-aaee858b-e74c-4a40-b0c1-2e238f3ce1c4.png">
+
+
+
+
 
 
 
