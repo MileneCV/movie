@@ -306,7 +306,7 @@ Certifications were the most important features used by Random Forest model. But
 
 # Tableau Dashboard
 
-https://public.tableau.com/shared/RKT4T3DHW?:display_count=n&:origin=viz_share_link
+[https://public.tableau.com/shared/RKT4T3DHW?:display_count=n&:origin=viz_share_link](https://public.tableau.com/app/profile/milene.carmes.vallejo7059/viz/Project_4_movie_production/Main_Dashboard1)
 
 <img width="741" alt="image" src="https://user-images.githubusercontent.com/112773242/228968027-2f780b6e-378d-41a7-9316-09d184ad55f2.png">
 
